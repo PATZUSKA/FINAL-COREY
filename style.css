@@ -11,8 +11,8 @@ body {
 /* Titre principal */
 h1 {
     text-align: center;
-    font-size: 3rem;
-    margin-top: 200px;
+    font-size: 2rem;
+    margin-top: 100px;
     font-family: 'Arial', sans-serif;
     color: #333;
 }
@@ -20,7 +20,7 @@ h1 {
 /* Style des boutons */
 button {
     font-size: 1.5rem;
-    padding: 10px 20px;
+    padding: 15px 25px;
     cursor: pointer;
     background-color: #ff8acb;
     border: none;
@@ -28,6 +28,7 @@ button {
     margin-top: 20px;
     border-radius: 8px;
     position: relative;
+    z-index: 2;  /* Assurer que les boutons restent au-dessus des images */
 }
 
 /* Style du bouton "No" */
@@ -37,9 +38,8 @@ button {
 
 /* Positionnement des chats et bisous */
 #cats img, #kisses img {
-    width: 50px; /* Taille réduite des images */
     position: absolute;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Positionnement du contenu principal */
@@ -58,16 +58,16 @@ button {
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     button {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 15px 30px;
     }
 
     #cats img, #kisses img {
-        width: 50px; /* Taille des chats et des bisous sur PC */
+        width: 70px; /* Ajuster la taille des images sur PC */
     }
 }
 
@@ -84,6 +84,6 @@ button {
     }
 
     #cats img, #kisses img {
-        width: 30px; /* Taille réduite des chats et des bisous sur téléphone */
+        width: 40px; /* Ajuster la taille des images sur téléphone */
     }
 }
