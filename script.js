@@ -35,17 +35,4 @@ document.addEventListener("DOMContentLoaded", function() {
         cat.style.left = catLeft + "px";
         cat.style.top = catTop + "px";
     }
-
-    let kissesContainer = document.getElementById("kisses");
-    for (let i = 0; i < 100; i++) {
-        let kiss = document.createElement("img");
-        kiss.src = "https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c";
-        kiss.classList.add("kiss");
-        kissesContainer.appendChild(kiss);
-
-        let kissLeft = Math.random() * (window.innerWidth - 100);
-        let kissTop = Math.random() * (window.innerHeight - 100);
-        kiss.style.left = kissLeft + "px";
-        kiss.style.top = kissTop + "px";
-    }
 });
