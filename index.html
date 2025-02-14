@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Page</title>
+    <title>Valentine's Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="cats"></div>
-    <div id="content">
-        <h1>Would you be my Valentine?</h1>
-        <button id="yes" onclick="goToNextPage()">Yes</button>
-        <button id="no" onclick="moveNoButton()">No</button>
+
+    <audio autoplay loop>
+        <source src="https://github.com/user-attachments/assets/94890e5a-fd85-4685-a6aa-4d92a12c6c8a" type="audio/mp3">
+    </audio>
+
+    <h1>Would you be my Valentine?</h1>
+    
+    <div class="buttons">
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
     </div>
+
+    <div class="chat-container"></div>
 
     <script src="script.js"></script>
 </body>
 </html>
-<audio autoplay loop>
-    <source src="https://github.com/user-attachments/assets/94890e5a-fd85-4685-a6aa-4d92a12c6c8a" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
