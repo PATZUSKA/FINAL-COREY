@@ -1,35 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff0f0;
-    color: #333;
-    padding: 20px;
-    background-size: cover;
-    position: relative;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    color: #ff69b4;
-}
-
 .message {
-    margin-top: 20px;
     text-align: center;
-    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content; /* Ajuste la largeur selon le contenu */
 }
 
-img {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
+.message img {
+    width: 100%; /* La lettre prendra la même largeur que le texte */
+    max-width: 300px; /* Pour éviter qu'elle devienne trop grande */
+    height: auto;
 }
 
 h2 {
     font-size: 1.2rem;
+    width: 100%; /* La largeur du texte est la même que celle de l'image */
+    text-align: center;
+    margin-top: 5px;
 }
 
 .text {
@@ -37,10 +25,9 @@ h2 {
     font-size: 1rem;
     color: #555;
     margin-top: 10px;
-}
-
-#messages {
-    padding-top: 20px;
+    max-width: 300px; /* La même largeur que la lettre */
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .message:hover .text {
