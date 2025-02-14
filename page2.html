@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="page2.css">
 </head>
 <body>
-
     <audio autoplay loop>
         <source src="https://github.com/user-attachments/assets/bff27303-33ee-4fbc-bc55-1cb372e6c4b5" type="audio/mp3">
     </audio>
+    
+    <h1>Happy Valentine's Day, my love.</h1>
+    
+    <div id="text-container"></div>
 
-    <h1>Happy Valentine’s Day, my love.</h1>
-
-    <!-- Zone où s'afficheront les textes -->
-    <div id="text-container" style="display:none;"></div>
-
-    <!-- Lettres -->
     <div class="letters">
         <div class="letter" onclick="showText('sad')">When you're sad</div>
         <div class="letter" onclick="showText('weak')">When you feel weak</div>
@@ -27,6 +24,27 @@
         <div class="letter" onclick="showText('reminder')">Reminder</div>
     </div>
 
-    <script src="page2.js"></script>
+    <script>
+        function showText(type) {
+            const textContainer = document.getElementById("text-container");
+            let message = "";
+
+            if (type === "sad") {
+                message = "I don’t know what you’re going through... but don’t forget that life still goes on.";
+            } else if (type === "weak") {
+                message = "I’m proud of you. (:";
+            } else if (type === "love") {
+                message = "The reason why I love you? There is no reason, I love you just the way you are.";
+            } else if (type === "miss") {
+                message = "I miss you so much, every single moment feels incomplete without you.";
+            } else if (type === "stupid") {
+                message = "WHY DID YOU CLICK ON THAT? YOU’RE NOT DUMB, AYO!";
+            } else if (type === "reminder") {
+                message = "You’re the only one that I want, I would never do anything to hurt you or risk losing what we have.";
+            }
+
+            textContainer.innerHTML = `<p>${message}</p>`;
+        }
+    </script>
 </body>
 </html>
