@@ -3,34 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine?</title>
+    <title>Valentine's Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Would you be my Valentine?</h1>
-
-        <!-- Moteur de recherche -->
-        <div class="search-bar">
-            <input type="text" value="Would you be my Valentine?" readonly>
-        </div>
-
-        <!-- Boutons Yes / No -->
+    <div class="search-container">
+        <input type="text" value="Would you be my Valentine?" readonly>
         <div class="buttons">
-            <button id="yes-btn" onclick="goToNextPage()">Yes</button>
-            <button id="no-btn" onclick="moveNoButton()">No</button>
-        </div>
-
-        <!-- Chats en dessous -->
-        <div class="cats">
-            <img src="https://github.com/user-attachments/assets/0de61b6f-8c13-438a-8dac-c40da1e695bc" class="cat">
-            <img src="https://github.com/user-attachments/assets/32e9d09c-bc48-4827-b39e-43eea39015c3" class="cat">
-            <img src="https://github.com/user-attachments/assets/2361f5c7-1418-42f8-a33b-bea022533388" class="cat">
+            <button id="yes" onclick="goToNextPage()">Yes</button>
+            <button id="no" onclick="moveNoButton()">No</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="cats-container"></div>
 
+    <script src="script.js"></script>
 </body>
 </html>
