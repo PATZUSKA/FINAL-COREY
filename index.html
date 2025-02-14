@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day</title>
+    <title>Happy Valentine's Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <audio autoplay loop>
-        <source src="https://github.com/user-attachments/assets/94890e5a-fd85-4685-a6aa-4d92a12c6c8a" type="audio/mp4">
+        <source src="https://github.com/user-attachments/assets/94890e5a-fd85-4685-a6aa-4d92a12c6c8a" type="audio/mp3">
     </audio>
-
-    <div class="container">
-        <h1>Would you be my Valentine?</h1>
-        <button id="yes" onclick="goToPage2()">Yes</button>
-        <button id="no" onclick="moveNoButton()">No</button>
+    
+    <h1>Would you be my Valentine?</h1>
+    <div id="yes-button-container">
+        <a href="page2.html" id="yes-button">
+            <button>Yes</button>
+        </a>
     </div>
-
-    <script src="script.js"></script>
+    <div id="no-button-container">
+        <button id="no-button">No</button>
+    </div>
+    
+    <script>
+        // Rendre le bouton "No" plus interactif
+        document.getElementById("no-button").addEventListener("mouseover", function() {
+            this.style.position = "absolute";
+            this.style.left = Math.random() * 100 + "vw";
+            this.style.top = Math.random() * 100 + "vh";
+        });
+    </script>
 </body>
 </html>
