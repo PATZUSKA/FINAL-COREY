@@ -3,29 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day</title>
+    <title>Happy Valentine's Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Happy Valentine’s Day, my love.</h1>
 
-    <div class="container">
-        <h1>Happy Valentine's Day, my love</h1>
-
-        <!-- Lettres cliquables -->
-        <div class="letters">
-            <div class="letter" id="letter1"><span>When you feel tired</span></div>
-            <div class="letter" id="letter2"><span>When you feel sad</span></div>
-            <div class="letter" id="letter3"><span>When you feel stupid</span></div>
-            <div class="letter" id="letter4"><span>Book of Facts</span></div>
-            <div class="letter" id="letter5"><span>Reminder</span></div>
-            <div class="letter big-letter" id="letter6"><span>💌 Open this</span></div>
-        </div>
-
-        <!-- Bisous répartis de manière aléatoire -->
-        <div id="kisses-container"></div>
+    <div class="letters-container">
+        <div class="letter" onclick="openLetter('sad')">When you feel sad</div>
+        <div class="letter" onclick="openLetter('stupid')">When you feel stupid</div>
+        <div class="letter" onclick="openLetter('reminder')">Reminder</div>
+        <div class="letter" onclick="openLetter('facts')">Book of facts</div>
+        <div class="letter" onclick="openLetter('love')">My love for you</div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="kisses-container"></div>
 
+    <script src="script.js"></script>
 </body>
 </html>
