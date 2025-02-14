@@ -1,112 +1,61 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    text-align: center;
     padding: 0;
-    overflow: hidden;
-    background-color: #f6e8e1; /* Fond pastel doux */
+    margin: 0;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-top: 20px;
-    color: #ff5c8f;
-    z-index: 1;
+    color: #FFB6C1;
 }
 
-#background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f0e7f5;
-    z-index: -1;
-}
-
-.chat {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    animation: moveChat 10s linear infinite;
-}
-
-.chat:hover {
-    transform: scale(1.2);
-}
-
-@keyframes moveChat {
-    0% { left: 0%; top: 0%; }
-    25% { left: 50%; top: 20%; }
-    50% { left: 20%; top: 60%; }
-    75% { left: 70%; top: 80%; }
-    100% { left: 0%; top: 100%; }
-}
-
-#yes-button, #no-button {
+button {
     font-size: 1.5em;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px;
-    background-color: #ff5c8f;
-    color: white;
+    background-color: #FF69B4;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
-#yes-button:hover, #no-button:hover {
-    transform: scale(1.1);
+button:hover {
+    background-color: #FF1493;
 }
 
-#yes-button {
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    z-index: 1;
+#yes-button-container, #no-button-container {
+    margin-top: 30px;
 }
 
-#no-button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
+.letters {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-#yes-button {
-    animation: moveButton 3s infinite;
+.letter {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FF69B4;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
 }
 
-@keyframes moveButton {
-    0% { left: 40%; }
-    25% { left: 42%; }
-    50% { left: 38%; }
-    75% { left: 40%; }
-    100% { left: 40%; }
+.letter:hover {
+    background-color: #FF1493;
 }
 
-/* Styles des chats animés */
-.chat:nth-of-type(1) {
-    background-image: url('https://github.com/user-attachments/assets/5c83841e-9dd4-4a08-8cbf-e42a9435ed72');
-    animation-duration: 10s;
-}
-.chat:nth-of-type(2) {
-    background-image: url('https://github.com/user-attachments/assets/2361f5c7-1418-42f8-a33b-bea022533388');
-    animation-duration: 11s;
-}
-.chat:nth-of-type(3) {
-    background-image: url('https://github.com/user-attachments/assets/32e9d09c-bc48-4827-b39e-43eea39015c3');
-    animation-duration: 9s;
-}
-
-/* Animation pour la musique */
-audio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+#text-container {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #555;
+    padding: 20px;
+    background-color: #FFEBEE;
+    border-radius: 10px;
 }
