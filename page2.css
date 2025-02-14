@@ -33,3 +33,9 @@ h2 {
 .message:hover .text {
     display: block;
 }
+body {
+    background-image: url('https://github.com/user-attachments/assets/31a61395-ff20-4087-9c22-25ff68f6802e');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
