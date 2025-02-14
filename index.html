@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day</title>
+    <title>Valentine's Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="question">
-            <p>Would you be my valentine?</p>
-        </div>
-        <div class="search-box">
-            <input type="text" id="search" placeholder="Type your answer..." value="Would you be my valentine?" readonly>
-        </div>
-        <div class="buttons">
-            <button id="yes" onclick="goToNextPage()">Yes</button>
-            <button id="no" onclick="moveNoButton()">No</button>
-        </div>
+    <!-- Conteneur pour les chats -->
+    <div id="cats"></div>
+    
+    <!-- Conteneur pour les bisous -->
+    <div id="kisses"></div>
+
+    <!-- Contenu principal avec les boutons -->
+    <div id="content">
+        <h1>Would you be my Valentine?</h1>
+        <button id="yes" onclick="goToNextPage()">Yes</button>
+        <button id="no" onclick="moveNoButton()">No</button>
     </div>
-
-    <!-- Affichage des chats -->
-    <div class="cats" id="cats"></div>
-
-    <!-- Affichage des bisous -->
-    <div class="kisses" id="kisses"></div>
 
     <script src="script.js"></script>
 </body>
