@@ -1,41 +1,47 @@
-.message {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content; /* Ajuste la largeur selon le contenu */
-}
-
-.message img {
-    width: 100%; /* La lettre prendra la même largeur que le texte */
-    max-width: 300px; /* Pour éviter qu'elle devienne trop grande */
-    height: auto;
-}
-
-h2 {
-    font-size: 1.2rem;
-    width: 100%; /* La largeur du texte est la même que celle de l'image */
-    text-align: center;
-    margin-top: 5px;
-}
-
-.text {
-    display: none;
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-    max-width: 300px; /* La même largeur que la lettre */
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.message:hover .text {
-    display: block;
-}
 body {
     background-image: url('https://github.com/user-attachments/assets/31a61395-ff20-4087-9c22-25ff68f6802e');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.letters-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.letter img {
+    width: 150px;
+    height: auto;
+}
+
+.letter p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+}
+
+#text-container {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
