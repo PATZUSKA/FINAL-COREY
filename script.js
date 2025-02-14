@@ -27,16 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
         "https://github.com/user-attachments/assets/0342707f-d8d8-450c-a1f8-41d2a4e086b2"
     ];
 
-    for (let i = 0; i < 300; i++) {
+    // Crée 200 chats de manière aléatoire
+    for (let i = 0; i < 200; i++) {
         let cat = document.createElement("img");
         // Sélectionner une image de chat aléatoire à partir de ton tableau d'images
         cat.src = catImages[Math.floor(Math.random() * catImages.length)];
         cat.classList.add("cat");
         catsContainer.appendChild(cat);
 
-        // Positionner chaque chat de manière aléatoire
-        cat.style.left = Math.random() * window.innerWidth + "px";
-        cat.style.top = Math.random() * window.innerHeight + "px";
+        // Positionner chaque chat de manière aléatoire en veillant à ne pas interférer avec les boutons
+        let catLeft = Math.random() * (window.innerWidth - 100); // éviter les bords de l'écran
+        let catTop = Math.random() * (window.innerHeight - 100); // éviter les bords de l'écran
+        cat.style.left = catLeft + "px";
+        cat.style.top = catTop + "px";
     }
 
     // Générer les bisous aléatoires
@@ -47,8 +50,10 @@ document.addEventListener("DOMContentLoaded", function() {
         kiss.classList.add("kiss");
         kissesContainer.appendChild(kiss);
 
-        // Positionner chaque bisou de manière aléatoire
-        kiss.style.left = Math.random() * window.innerWidth + "px";
-        kiss.style.top = Math.random() * window.innerHeight + "px";
+        // Positionner chaque bisou de manière aléatoire en veillant à ne pas interférer avec les boutons
+        let kissLeft = Math.random() * (window.innerWidth - 100); // éviter les bords de l'écran
+        let kissTop = Math.random() * (window.innerHeight - 100); // éviter les bords de l'écran
+        kiss.style.left = kissLeft + "px";
+        kiss.style.top = kissTop + "px";
     }
 });
