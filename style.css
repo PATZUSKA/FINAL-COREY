@@ -33,7 +33,7 @@ body {
 #search-bar {
     font-size: 24px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     max-width: 500px;
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -106,11 +106,12 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    width: 150px;
-    height: 200px;
+    width: 180px;
+    height: 250px;
     position: relative;
     cursor: pointer;
     transition: all 0.3s;
+    background-position: center;
 }
 
 .letter span {
@@ -132,11 +133,15 @@ button:hover {
     animation: randomMove 5s infinite;
 }
 
+.kiss-img {
+    width: 30px; /* Petite taille des bisous */
+}
+
 @keyframes randomMove {
     0% {
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(300px, 300px);
+        transform: translate(200px, 200px);
     }
 }
