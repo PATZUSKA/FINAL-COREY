@@ -54,7 +54,7 @@ button {
     color: white;
 }
 
-#no {
+.no-button {
     background-color: #ddd;
     color: black;
     position: relative;
@@ -66,12 +66,22 @@ button {
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .cat {
     width: 100px;
     height: auto;
+    position: absolute;
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 /* PAGE 2 */
