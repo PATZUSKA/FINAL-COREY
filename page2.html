@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2 - Valentine's Message</title>
+    <title>Happy Valentine's Day</title>
     <link rel="stylesheet" href="page2.css">
 </head>
 <body>
-    <div id="messages">
-        <h1>Happy Valentine's Day, My Love!</h1>
-        <div class="message" id="message-sad">
-            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Sad Letter">
-            <h2>When you're sad</h2>
-            <div class="text" id="text-sad">
-                <p>I don't know what you're going through, but just remember: you don't have to be perfect to be loved...</p>
-            </div>
+
+    <audio autoplay loop>
+        <source src="https://github.com/user-attachments/assets/bff27303-33ee-4fbc-bc55-1cb372e6c4b5" type="audio/mp3">
+    </audio>
+
+    <h1>Happy Valentine’s Day, my love.</h1>
+
+    <div class="letters-container">
+        <div class="letter" onclick="showText('sad')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Letter">
+            <p>When you're sad</p>
         </div>
-        <div class="message" id="message-weak">
-            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Weak Letter">
-            <h2>When you're feeling weak</h2>
-            <div class="text" id="text-weak">
-                <p>I'm proud of you. Most people don't know your story, and even I don’t know all of your struggles...</p>
-            </div>
+        <div class="letter" onclick="showText('weak')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Letter">
+            <p>When you feel weak</p>
         </div>
-        <div class="message" id="message-love">
-            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Love Letter">
-            <h2>When you're feeling loved</h2>
-            <div class="text" id="text-love">
-                <p>There is no reason why I like you, but I do, more than anything in this world...</p>
-            </div>
-        </div>
-        <div class="message" id="message-missed">
-            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Missed Letter">
-            <h2>When you're missed</h2>
-            <div class="text" id="text-missed">
-                <p>Sometimes, I miss you so much that it feels like a physical ache in my chest...</p>
-            </div>
+        <div class="letter" onclick="showText('love')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" alt="Letter">
+            <p>When you need love</p>
         </div>
     </div>
+
+    <div id="text-container"></div>
 
     <script src="page2.js"></script>
 </body>
 </html>
-<audio autoplay loop>
-    <source src="https://github.com/user-attachments/assets/bff27303-33ee-4fbc-bc55-1cb372e6c4b5" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
