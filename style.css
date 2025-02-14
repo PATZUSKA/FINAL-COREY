@@ -28,34 +28,18 @@ button:hover {
 
 #yes-button-container, #no-button-container {
     margin-top: 30px;
+    position: relative;
 }
 
-.letters {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#yes-button {
+    z-index: 0; /* Place le bouton "Yes" derrière */
 }
 
-.letter {
-    margin: 10px;
-    padding: 10px;
-    background-color: #FF69B4;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
+#no-button-container {
+    z-index: 1; /* Place le bouton "No" devant */
 }
 
-.letter:hover {
-    background-color: #FF1493;
-}
-
-#text-container {
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #555;
-    padding: 20px;
-    background-color: #FFEBEE;
-    border-radius: 10px;
+#no-button {
+    position: relative;
+    z-index: 2; /* Assure que le bouton "No" soit au-dessus */
 }
