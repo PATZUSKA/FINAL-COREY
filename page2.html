@@ -11,48 +11,21 @@
     <div class="container">
         <h1>Happy Valentine's Day, my love</h1>
 
-        <!-- Ajout des lettres cliquables -->
+        <!-- Lettres cliquables -->
         <div class="letters">
-            <div class="letter" id="letter1">
-                <span>When you feel tired</span>
-            </div>
-            <div class="letter" id="letter2">
-                <span>When you feel sad</span>
-            </div>
-            <div class="letter" id="letter3">
-                <span>When you feel stupid</span>
-            </div>
+            <div class="letter" id="letter1"><span>When you feel tired</span></div>
+            <div class="letter" id="letter2"><span>When you feel sad</span></div>
+            <div class="letter" id="letter3"><span>When you feel stupid</span></div>
+            <div class="letter" id="letter4"><span>Book of Facts</span></div>
+            <div class="letter" id="letter5"><span>Reminder</span></div>
+            <div class="letter big-letter" id="letter6"><span>💌 Open this</span></div>
         </div>
 
         <!-- Bisous répartis de manière aléatoire -->
-        <div class="kiss" style="top: 10%; left: 10%;">
-            <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" alt="Kiss" class="kiss-img">
-        </div>
-        <div class="kiss" style="top: 50%; left: 50%;">
-            <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" alt="Kiss" class="kiss-img">
-        </div>
-        <div class="kiss" style="top: 20%; left: 80%;">
-            <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" alt="Kiss" class="kiss-img">
-        </div>
-        <div class="kiss" style="top: 70%; left: 40%;">
-            <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" alt="Kiss" class="kiss-img">
-        </div>
-
+        <div id="kisses-container"></div>
     </div>
 
-    <script>
-        document.getElementById('letter1').addEventListener('click', function() {
-            alert("Take a break and rest, my love. Everything will be okay, and I'll be here when you feel better.");
-        });
-
-        document.getElementById('letter2').addEventListener('click', function() {
-            alert("Whenever you're feeling down, remember that I care about you. Don't hesitate to lean on me, I’m always here for you.");
-        });
-
-        document.getElementById('letter3').addEventListener('click', function() {
-            alert("We all make mistakes sometimes, but that doesn’t make you any less amazing. You're incredible, just as you are.");
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
