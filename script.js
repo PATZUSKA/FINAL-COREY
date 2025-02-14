@@ -24,10 +24,10 @@ function showMessage(type) {
     alert(messages[type]);
 }
 
-// Génération de 200 chats aléatoires
+// Génération de 300 chats aléatoires
 document.addEventListener("DOMContentLoaded", function() {
     let catsContainer = document.getElementById("cats");
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 300; i++) {
         let cat = document.createElement("img");
         cat.src = "https://github.com/user-attachments/assets/2361f5c7-1418-42f8-a33b-bea022533388"; // Remplace cette URL par celle du chat que tu souhaites
         cat.classList.add("cat");
@@ -38,13 +38,4 @@ document.addEventListener("DOMContentLoaded", function() {
         cat.style.left = Math.random() * window.innerWidth + "px";
         cat.style.top = Math.random() * window.innerHeight + "px";
     }
-
-    // Placement aléatoire des bisous
-    let kisses = document.querySelectorAll(".kiss");
-    kisses.forEach(kiss => {
-        let x = Math.random() * window.innerWidth;
-        let y = Math.random() * window.innerHeight;
-        kiss.style.left = `${x}px`;
-        kiss.style.top = `${y}px`;
-    });
 });
