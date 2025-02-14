@@ -8,6 +8,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#cats img {
+    position: absolute;
+    z-index: 1;
+}
+
 /* Title style */
 h1 {
     text-align: center;
@@ -34,12 +39,6 @@ button {
     background-color: #f42d75;
 }
 
-/* Container for cats and kisses */
-#cats img, #kisses img {
-    position: absolute;
-    z-index: 1;
-}
-
 /* Content container */
 #content {
     position: relative;
@@ -50,7 +49,7 @@ button {
     align-items: center;
 }
 
-/* Media queries for different screen sizes */
+/* Ensure images are distributed across the whole screen */
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -60,8 +59,8 @@ button {
         font-size: 2rem;
         padding: 15px 30px;
     }
-    #cats img, #kisses img {
-        width: 70px;
+    #cats img {
+        width: 100px;
     }
 }
 
@@ -74,7 +73,7 @@ button {
         font-size: 1rem;
         padding: 10px 15px;
     }
-    #cats img, #kisses img {
-        width: 40px;
+    #cats img {
+        width: 60px;
     }
 }
