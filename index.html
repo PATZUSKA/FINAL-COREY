@@ -8,53 +8,25 @@
 </head>
 <body>
 
-    <!-- Page d'accueil -->
+    <!-- Première page avec la question -->
     <div class="container">
-        <!-- Image du chat avec animation -->
-        <div class="chat">
-            <img src="images/chat1.png" alt="Chat Kawaii 1">
-        </div>
-
-        <!-- Question "Would you be my Valentine?" avec boutons -->
-        <div class="question">
-            <p>Would you be my Valentine?</p>
+        <div class="content">
+            <div class="search-box">
+                <input type="text" id="search-bar" placeholder="Type here..." value="Would you be my valentine?" readonly />
+                <div id="chat-icons">
+                    <img src="images/chat1.png" alt="Chat 1" class="chat-icon">
+                    <img src="images/chat2.png" alt="Chat 2" class="chat-icon">
+                    <img src="images/chat3.png" alt="Chat 3" class="chat-icon">
+                    <img src="images/chat4.png" alt="Chat 4" class="chat-icon">
+                </div>
+            </div>
             <div class="buttons">
-                <!-- Bouton "No" qui se déplace -->
-                <button class="btn" id="no">No</button>
-                <!-- Bouton "Yes" qui affiche la deuxième page -->
-                <button class="btn" id="yes">Yes</button>
+                <button id="yes-button">Yes</button>
+                <button id="no-button">No</button>
             </div>
         </div>
     </div>
 
-    <!-- Page des chats Kawaii -->
-    <div id="chatPage" class="hidden">
-        <!-- Plusieurs chats Kawaii qui font des activités -->
-        <div class="chats">
-            <img src="https://github.com/user-attachments/assets/0de61b6f-8c13-438a-8dac-c40da1e695bc" alt="Chat Kawaii 1">
-            <img src="https://github.com/user-attachments/assets/32e9d09c-bc48-4827-b39e-43eea39015c3" alt="Chat Kawaii 2">
-            <img src="https://github.com/user-attachments/assets/2361f5c7-1418-42f8-a33b-bea022533388" alt="Chat Kawaii 3">
-            <img src="https://github.com/user-attachments/assets/931f64c7-cfc8-47b8-be4f-dc424a2e6609" alt="Chat Kawaii 4">
-            <img src="https://github.com/user-attachments/assets/d6087dca-4051-4f89-b4ff-9d01307aa233" alt="Chat Kawaii 5">
-            <img src="https://github.com/user-attachments/assets/85f67fe1-4645-44b8-99e2-2037fc5d620f" alt="Chat Kawaii 6">
-            <img src="https://github.com/user-attachments/assets/5c83841e-9dd4-4a08-8cbf-e42a9435ed72" alt="Chat Kawaii 7">
-            <img src="https://github.com/user-attachments/assets/0342707f-d8d8-450c-a1f8-41d2a4e086b2" alt="Chat Kawaii 8">
-        </div>
-
-        <!-- Message central avec lettres -->
-        <div class="message">
-            <h2>Happy Valentine's Day, my love!</h2>
-            <div class="letters">
-                <!-- Lettres qui s'ouvrent à des moments spécifiques -->
-                <button class="letter" id="letter1">When you feel tired</button>
-                <button class="letter" id="letter2">When you are sad</button>
-                <button class="letter" id="letter3">When you smile</button>
-                <button class="letter" id="letter4">When you need me</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ajout du fichier JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
