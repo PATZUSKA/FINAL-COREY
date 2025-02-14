@@ -1,79 +1,40 @@
-/* Global styles */
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: #f9e0e0;
-    font-family: Arial, sans-serif;
-}
-
-#cats img {
-    position: absolute;
-    z-index: 1;
-}
-
-/* Title style */
-h1 {
+    background-color: #ffebf0;
     text-align: center;
-    font-size: 2rem;
-    margin-top: 100px;
-    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Button styles */
-button {
-    font-size: 1.5rem;
-    padding: 15px 25px;
-    cursor: pointer;
-    background-color: #ff8acb;
-    border: none;
-    color: white;
+h1 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.buttons {
     margin-top: 20px;
-    border-radius: 8px;
-    position: relative;
-    z-index: 2;
 }
 
-#no {
-    background-color: #f42d75;
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
 }
 
-/* Content container */
-#content {
-    position: relative;
-    z-index: 10;
+.chat-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    pointer-events: none;
 }
 
-/* Ensure images are distributed across the whole screen */
-@media screen and (min-width: 768px) {
-    h1 {
-        font-size: 3rem;
-        margin-top: 150px;
-    }
-    button {
-        font-size: 2rem;
-        padding: 15px 30px;
-    }
-    #cats img {
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 2rem;
-        margin-top: 150px;
-    }
-    button {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-    #cats img {
-        width: 60px;
-    }
+.chat-container img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
 }
