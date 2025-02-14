@@ -1,9 +1,7 @@
-// Fonction pour aller à la deuxième page
 function goToNextPage() {
     window.location.href = "page2.html";
 }
 
-// Animation du bouton "No"
 function moveNoButton() {
     let noButton = document.getElementById("no");
     let x = Math.random() * (window.innerWidth - noButton.clientWidth);
@@ -13,7 +11,6 @@ function moveNoButton() {
     noButton.style.top = `${y}px`;
 }
 
-// Génération des chats aléatoires avec tes images
 document.addEventListener("DOMContentLoaded", function() {
     let catsContainer = document.getElementById("cats");
     let catImages = [
@@ -27,32 +24,27 @@ document.addEventListener("DOMContentLoaded", function() {
         "https://github.com/user-attachments/assets/0342707f-d8d8-450c-a1f8-41d2a4e086b2"
     ];
 
-    // Crée 200 chats de manière aléatoire sur toute la page
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 100; i++) {
         let cat = document.createElement("img");
-        // Sélectionner une image de chat aléatoire à partir de ton tableau d'images
         cat.src = catImages[Math.floor(Math.random() * catImages.length)];
         cat.classList.add("cat");
         catsContainer.appendChild(cat);
 
-        // Positionner chaque chat de manière aléatoire pour couvrir toute la page
-        let catLeft = Math.random() * (window.innerWidth - 100); // Éviter les bords de l'écran
-        let catTop = Math.random() * (window.innerHeight - 100); // Éviter les bords de l'écran
+        let catLeft = Math.random() * (window.innerWidth - 100);
+        let catTop = Math.random() * (window.innerHeight - 100);
         cat.style.left = catLeft + "px";
         cat.style.top = catTop + "px";
     }
 
-    // Générer les bisous aléatoires
     let kissesContainer = document.getElementById("kisses");
-    for (let i = 0; i < 100; i++) {  // Générer 100 bisous
+    for (let i = 0; i < 100; i++) {
         let kiss = document.createElement("img");
-        kiss.src = "https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c";  // URL de ton image de bisous
+        kiss.src = "https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c";
         kiss.classList.add("kiss");
         kissesContainer.appendChild(kiss);
 
-        // Positionner chaque bisou de manière aléatoire pour couvrir toute la page
-        let kissLeft = Math.random() * (window.innerWidth - 100); // Éviter les bords de l'écran
-        let kissTop = Math.random() * (window.innerHeight - 100); // Éviter les bords de l'écran
+        let kissLeft = Math.random() * (window.innerWidth - 100);
+        let kissTop = Math.random() * (window.innerHeight - 100);
         kiss.style.left = kissLeft + "px";
         kiss.style.top = kissTop + "px";
     }
