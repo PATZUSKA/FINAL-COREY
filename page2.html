@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Valentine's Day, my love</h1>
+        <div class="letters">
+            <div class="letter" id="letter1">
+                <span>When you feel tired</span>
+            </div>
+            <div class="letter" id="letter2">
+                <span>When you feel sad</span>
+            </div>
+            <div class="letter" id="letter3">
+                <span>When you feel stupid</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('letter1').addEventListener('click', function() {
+            alert("Take a rest, everything will be okay.");
+        });
+
+        document.getElementById('letter2').addEventListener('click', function() {
+            alert("I'm here for you, always.");
+        });
+
+        document.getElementById('letter3').addEventListener('click', function() {
+            alert("You are amazing, never forget that.");
+        });
+    </script>
+
+</body>
+</html>
