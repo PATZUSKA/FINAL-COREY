@@ -1,33 +1,14 @@
-.message {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+function showText(type) {
+    const textContainer = document.getElementById("text-container");
+    let message = "";
 
-.message img {
-    width: auto;  /* Ajuste la largeur en fonction du texte */
-    max-width: 100%; /* Empêche l'image d'être plus large que l'écran */
-    height: auto; /* Conserve les proportions */
-}
+    if (type === "sad") {
+        message = "I don't know what you're going through. But, just remember: You don't have to be perfect...";
+    } else if (type === "weak") {
+        message = "I'm proud of you.(: Most people don't know your story, and even me I don’t know all your struggles...";
+    } else if (type === "love") {
+        message = "The reason why I like you? There is no reason. There should be no reason...";
+    }
 
-h2 {
-    font-size: 1.2rem;
-    width: auto;
-    text-align: center;
-}
-
-.text {
-    display: none;
-    font-size: 1rem;
-    color: #555;
-    margin-top: 10px;
-    max-width: 90%; /* Pour éviter que le texte soit trop large */
-    word-wrap: break-word; /* Permet au texte de bien s’adapter */
-    text-align: center;
-}
-
-.message:hover .text {
-    display: block;
+    textContainer.innerHTML = `<p>${message}</p>`;
 }
