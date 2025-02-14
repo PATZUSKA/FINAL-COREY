@@ -1,49 +1,88 @@
+/* Style général */
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #ffecf0;
-}
-
-.search-container {
-    margin-top: 100px;
-}
-
-input {
-    font-size: 18px;
-    padding: 10px;
-    width: 350px;
     text-align: center;
-    border-radius: 20px;
-    border: 2px solid pink;
-    background-color: white;
+    background-color: #ffe4e1;
+    overflow: hidden;
 }
 
+/* Centrer le contenu principal */
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Titre principal */
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style du "moteur de recherche" */
+.search-box {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    background: white;
+}
+
+.search-box input {
+    border: none;
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+}
+
+/* Style des boutons "Yes" et "No" */
 .buttons {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 button {
-    font-size: 16px;
-    padding: 8px 16px;
+    padding: 10px 20px;
+    font-size: 18px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 #yes {
-    background-color: lightgreen;
+    background-color: #ff69b4;
+    color: white;
 }
 
 #no {
-    background-color: lightcoral;
+    background-color: #ddd;
+    color: black;
     position: relative;
 }
 
-h1 {
-    margin-top: 50px;
+/* Style des chats */
+.cats {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.letters-container {
+.cat {
+    width: 100px;
+    height: auto;
+}
+
+/* PAGE 2 */
+/* Titre */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Lettres */
+.letters {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -51,22 +90,32 @@ h1 {
 }
 
 .letter {
-    width: 150px;
-    height: 100px;
-    background: url('https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81') no-repeat center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    text-align: center;
     cursor: pointer;
 }
 
-.kisses-container img {
-    width: 40px;
-    position: absolute;
+.letter p {
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
-.cats-container img {
-    width: 50px;
+.letter-img {
+    width: 100px;
+    height: auto;
+}
+
+/* Style des bisous */
+.kisses {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kiss {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    opacity: 0.7;
 }
