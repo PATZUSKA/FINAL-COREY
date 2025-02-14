@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="search-container">
-        <input type="text" value="Would you be my Valentine?" readonly>
+    <div class="container">
+        <div class="question">
+            <p>Would you be my valentine?</p>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Type your answer..." value="Would you be my valentine?" readonly>
+        </div>
         <div class="buttons">
             <button id="yes" onclick="goToNextPage()">Yes</button>
-            <button id="no" onclick="moveNoButton()">No</button>
+            <button id="no">No</button>
         </div>
     </div>
-
-    <div class="cats-container"></div>
+    
+    <!-- Affichage des chats -->
+    <div class="cats">
+        <img src="https://github.com/user-attachments/assets/0de61b6f-8c13-438a-8dac-c40da1e695bc" class="cat" alt="Chat">
+        <img src="https://github.com/user-attachments/assets/32e9d09c-bc48-4827-b39e-43eea39015c3" class="cat" alt="Chat">
+        <img src="https://github.com/user-attachments/assets/2361f5c7-1418-42f8-a33b-bea022533388" class="cat" alt="Chat">
+        <img src="https://github.com/user-attachments/assets/931f64c7-cfc8-47b8-be4f-dc424a2e6609" class="cat" alt="Chat">
+    </div>
 
     <script src="script.js"></script>
 </body>
