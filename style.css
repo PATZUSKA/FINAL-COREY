@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #fffbf0;
+    flex-direction: column;
 }
 
 .container {
@@ -32,11 +33,14 @@ body {
 #search-bar {
     font-size: 24px;
     padding: 10px;
-    width: 60%;
+    width: 80%;
+    max-width: 500px;
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #f1f1f1;
     text-align: center;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #chat-icons {
@@ -87,5 +91,52 @@ button:hover {
     }
     100% {
         transform: translateX(10px);
+    }
+}
+
+/* Style de la deuxième page */
+.letters {
+    margin-top: 20px;
+}
+
+.letter {
+    display: inline-block;
+    margin: 10px;
+    background-image: url('https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.letter span {
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.letter:hover {
+    transform: scale(1.1);
+}
+
+.kiss {
+    position: absolute;
+    animation: randomMove 5s infinite;
+}
+
+@keyframes randomMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(300px, 300px);
     }
 }
