@@ -3,11 +3,39 @@ function showText(type) {
     let message = "";
 
     if (type === "sad") {
-        message = "I don't know what you're going through. But, just remember: You don't have to be perfect...";
+        message = "I don’t know what you’re going through.
+But, just remember:
+You don’t have to be perfect.
+It’s okay to be having a bad day, our life is made of that, one day you will be in your best moment and in another day your worst, that’s life, but don’t forget that life still goes on.
+Let’s get through this together";
     } else if (type === "weak") {
-        message = "I'm proud of you.(: Most people don't know your story, and even me I don’t know all your struggles...";
-    } else if (type === "love") {
-        message = "The reason why I like you? There is no reason. There should be no reason...";
+        message = "I’m proud of you. (:
+Most people don’t know your story, and even me, I don’t know all your struggles, your hustle, your prayers. But one thing I know is that I’m proud of you.
+I’m proud of the man you are, the man you are becoming, and the man you will be.
+So don’t let those silent battles have you, and hang on";
+    } else if (type === "why love you hmm?") {
+        message = "The reason why I love you?well axtualy 
+There is no reason. There should be no reason.
+If you love someone because of a reason, when that reason is gone, your heart will change too.
+I like you without a reason.
+I like you because you are you.";
+    } else if (type === "idk?") {
+        message = "Have you ever missed someone so much that it feels like a physical ache? Have you ever found yourself staring at your phone, hoping for a message from them, wishing for just a sign that they’re thinking about you too?
+Has the idea of that one person texting you ever made you forget about everything else, making it hard to focus on anything?
+Have you ever loved someone so deeply, that even the smallest thought of them brightens your whole day?
+I have. And I do all the time.
+It still feels unreal that someone like you could care about me the way you do. Sometimes, I get lost in my thoughts, overanalyzing things I shouldn’t, but I try to keep it to myself. I don’t want to be too much, to take up too much space in your life, so I hold back. Maybe too much.
+And I know that sometimes it might seem like I’m distant, but it’s never because I don’t care. It’s the opposite—I care so much that I don’t want to suffocate you with it.
+I tell you I love you because I mean it, but I also try not to say it too much, not because I don’t feel it, but because I don’t want it to lose its meaning.
+I don’t want to overwhelm you.
+I might not always be the best at showing love the right way, but I promise, every little thing I do is because you mean the world to me";
+    } else if (type === "when you feel stupid ") {
+        message = "WHY DID YOU CLICK ON THAT?
+YOU’RE NOT DUMB, AYO!";
+    } else if (type === "reminder  ") {
+        message = "You’re the only one that I want, I would never do anything to hurt you or risk losing what we have.
+You mean a lot to me, and I’m glad that we are as close as we are. <3
+I love you so much ( i love you more)!";
     }
 
     textContainer.innerHTML = `<p>${message}</p>`;
