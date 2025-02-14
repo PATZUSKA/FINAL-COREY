@@ -1,4 +1,4 @@
-/* Style global */
+/* Global styles */
 body {
     margin: 0;
     padding: 0;
@@ -8,16 +8,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Titre principal */
+/* Title style */
 h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 100px;
-    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-/* Style des boutons */
+/* Button styles */
 button {
     font-size: 1.5rem;
     padding: 15px 25px;
@@ -28,21 +27,20 @@ button {
     margin-top: 20px;
     border-radius: 8px;
     position: relative;
-    z-index: 2;  /* Assurer que les boutons restent au-dessus des images */
+    z-index: 2;
 }
 
-/* Style du bouton "No" */
 #no {
     background-color: #f42d75;
 }
 
-/* Positionnement des chats et bisous */
+/* Container for cats and kisses */
 #cats img, #kisses img {
     position: absolute;
     z-index: 1;
 }
 
-/* Positionnement du contenu principal */
+/* Content container */
 #content {
     position: relative;
     z-index: 10;
@@ -52,38 +50,31 @@ button {
     align-items: center;
 }
 
-/* Media Queries pour ajuster la taille et l'espacement selon la taille de l'écran */
-
-/* Sur un grand écran (PC) */
+/* Media queries for different screen sizes */
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 3rem;
         margin-top: 150px;
     }
-
     button {
         font-size: 2rem;
         padding: 15px 30px;
     }
-
     #cats img, #kisses img {
-        width: 70px; /* Ajuster la taille des images sur PC */
+        width: 70px;
     }
 }
 
-/* Sur un petit écran (téléphone) */
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 2rem;
         margin-top: 150px;
     }
-
     button {
         font-size: 1rem;
         padding: 10px 15px;
     }
-
     #cats img, #kisses img {
-        width: 40px; /* Ajuster la taille des images sur téléphone */
+        width: 40px;
     }
 }
