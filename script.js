@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "https://github.com/user-attachments/assets/0342707f-d8d8-450c-a1f8-41d2a4e086b2"
     ];
 
-    // Crée 200 chats de manière aléatoire
+    // Crée 200 chats de manière aléatoire sur toute la page
     for (let i = 0; i < 200; i++) {
         let cat = document.createElement("img");
         // Sélectionner une image de chat aléatoire à partir de ton tableau d'images
@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
         cat.classList.add("cat");
         catsContainer.appendChild(cat);
 
-        // Positionner chaque chat de manière aléatoire en veillant à ne pas interférer avec les boutons
-        let catLeft = Math.random() * (window.innerWidth - 100); // éviter les bords de l'écran
-        let catTop = Math.random() * (window.innerHeight - 100); // éviter les bords de l'écran
+        // Positionner chaque chat de manière aléatoire pour couvrir toute la page
+        let catLeft = Math.random() * (window.innerWidth - 100); // Éviter les bords de l'écran
+        let catTop = Math.random() * (window.innerHeight - 100); // Éviter les bords de l'écran
         cat.style.left = catLeft + "px";
         cat.style.top = catTop + "px";
     }
@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
         kiss.classList.add("kiss");
         kissesContainer.appendChild(kiss);
 
-        // Positionner chaque bisou de manière aléatoire en veillant à ne pas interférer avec les boutons
-        let kissLeft = Math.random() * (window.innerWidth - 100); // éviter les bords de l'écran
-        let kissTop = Math.random() * (window.innerHeight - 100); // éviter les bords de l'écran
+        // Positionner chaque bisou de manière aléatoire pour couvrir toute la page
+        let kissLeft = Math.random() * (window.innerWidth - 100); // Éviter les bords de l'écran
+        let kissTop = Math.random() * (window.innerHeight - 100); // Éviter les bords de l'écran
         kiss.style.left = kissLeft + "px";
         kiss.style.top = kissTop + "px";
     }
