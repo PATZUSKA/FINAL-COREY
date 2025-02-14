@@ -77,36 +77,6 @@ button {
     margin: 10px;
 }
 
-/* PAGE 2 */
-/* Titre */
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-/* Lettres */
-.letters {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.letter {
-    text-align: center;
-    cursor: pointer;
-}
-
-.letter p {
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-.letter-img {
-    width: 100px;
-    height: auto;
-}
-
 /* Style des bisous */
 .kisses {
     position: absolute;
