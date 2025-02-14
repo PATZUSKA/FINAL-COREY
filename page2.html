@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine's Day</title>
+    <title>Valentine's Day - Messages</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Happy Valentine’s Day, my love.</h1>
-
-    <div class="letters-container">
-        <div class="letter" onclick="openLetter('sad')">When you feel sad</div>
-        <div class="letter" onclick="openLetter('stupid')">When you feel stupid</div>
-        <div class="letter" onclick="openLetter('reminder')">Reminder</div>
-        <div class="letter" onclick="openLetter('facts')">Book of facts</div>
-        <div class="letter" onclick="openLetter('love')">My love for you</div>
+    <h1>Happy Valentine's Day, my love!</h1>
+    <div class="letters">
+        <div class="letter" onclick="showMessage('sad')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" class="letter-img" alt="Sad Letter">
+            <p>When you feel sad</p>
+        </div>
+        <div class="letter" onclick="showMessage('weak')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" class="letter-img" alt="Weak Letter">
+            <p>When you feel weak</p>
+        </div>
+        <div class="letter" onclick="showMessage('love')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" class="letter-img" alt="Love Letter">
+            <p>When you feel loved</p>
+        </div>
+        <div class="letter" onclick="showMessage('stupid')">
+            <img src="https://github.com/user-attachments/assets/f0e77c3e-2b4c-41f3-ae89-ddae0b66ad81" class="letter-img" alt="Stupid Letter">
+            <p>When you feel stupid</p>
+        </div>
     </div>
 
-    <div class="kisses-container"></div>
+    <!-- Bisous aléatoires -->
+    <div class="kisses">
+        <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" class="kiss" alt="Kiss">
+        <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" class="kiss" alt="Kiss">
+        <img src="https://github.com/user-attachments/assets/76d2b938-089c-4efa-9829-06dce802ed6c" class="kiss" alt="Kiss">
+        <!-- Ajoute ici autant de bisous que tu veux -->
+    </div>
 
     <script src="script.js"></script>
 </body>
